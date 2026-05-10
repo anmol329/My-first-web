@@ -5,6 +5,8 @@
   --color-primary-black: #0B0B0B;
   --color-accent-green: #00FF88;
   --color-accent-red: #FF3B3B;
+  --color-bg-dark-red: #1A0000;
+  --color-bg-darker-red: #0F0000;
   --color-text-white: #FFFFFF;
 
   --font-heading: "Bebas Neue", sans-serif;
@@ -13,7 +15,7 @@
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-primary-black);
+  background-color: var(--color-bg-dark-red);
   color: var(--color-text-white);
   overflow-x: hidden;
 }
@@ -24,10 +26,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 59, 59, 0.15);
 }
 
 .text-gradient {

@@ -40,10 +40,10 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-24 bg-[#0B0B0B] relative">
+    <section id="pricing" className="py-24 bg-[#1A0000] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h4 className="text-accent-green font-bold tracking-widest uppercase text-sm mb-4">Membership</h4>
+          <h4 className="text-accent-red font-bold tracking-widest uppercase text-sm mb-4">Membership</h4>
           <h2 className="text-5xl md:text-7xl font-heading text-white">CHOOSE YOUR <span className="text-transparent text-gradient">PLAN</span></h2>
         </div>
 
@@ -55,10 +55,10 @@ export default function Pricing() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
-              className={`rounded glass-card p-8 border-t-4 ${plan.popular ? 'border-t-accent-green' : 'border-t-white/10'} relative`}
+              className={`rounded glass-card p-8 border-t-4 ${plan.popular ? 'border-t-accent-red' : 'border-t-white/10'} relative`}
             >
               {plan.popular && (
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-accent-green text-primary-black font-bold text-[10px] uppercase tracking-widest px-4 py-1 rounded-full">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-accent-red text-accent-green font-bold text-[10px] uppercase tracking-widest px-4 py-1 rounded-full">
                   Most Popular
                 </div>
               )}
@@ -73,13 +73,13 @@ export default function Pricing() {
               <ul className="space-y-4 mb-10">
                 {plan.features.map((feat, idx) => (
                   <li key={idx} className="flex items-start">
-                    <Check size={18} className="text-accent-green mr-3 shrink-0 mt-0.5" />
+                    <Check size={18} className="text-accent-red mr-3 shrink-0 mt-0.5" />
                     <span className="text-gray-300 text-sm font-medium">{feat}</span>
                   </li>
                 ))}
               </ul>
               
-              <a href="#contact" className={`block w-full py-4 text-center font-bold uppercase tracking-wider text-sm transition-colors rounded ${plan.popular ? 'bg-accent-green text-primary-black hover:bg-[#00d672]' : 'bg-white/5 border border-white/10 text-white hover:bg-white/10'}`}>
+              <a href="#contact" className={`block w-full py-4 text-center font-bold uppercase tracking-wider text-sm transition-colors rounded ${plan.popular ? 'bg-accent-red text-white hover:bg-red-600' : 'bg-white/5 border border-white/10 text-white hover:bg-white/10'}`}>
                 Select Plan
               </a>
             </motion.div>

@@ -15,20 +15,20 @@ export default function Navbar() {
   const links = ['About', 'Services', 'Facilities', 'Results', 'Pricing', 'Contact'];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#0B0B0B]/90 backdrop-blur-md py-4 border-b border-white/5' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#1A0000]/90 backdrop-blur-md py-4 border-b border-accent-red/20' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <div className="text-3xl font-heading text-white cursor-pointer tracking-wider">
-          IRON<span className="text-accent-green">FORGE</span>
+          IRON<span className="text-accent-red">FORGE</span>
         </div>
         
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-8">
           {links.map((link) => (
-            <a key={link} href={`#${link.toLowerCase()}`} className="text-sm font-medium text-gray-300 hover:text-accent-green transition-colors">
+            <a key={link} href={`#${link.toLowerCase()}`} className="text-sm font-medium text-gray-300 hover:text-accent-red transition-colors">
               {link}
             </a>
           ))}
-          <a href="#contact" className="px-5 py-2.5 bg-accent-green text-primary-black font-semibold uppercase tracking-wider text-sm hover:bg-[#00d672] transition-colors rounded">
+          <a href="#contact" className="px-5 py-2.5 bg-accent-red text-primary-black font-semibold uppercase tracking-wider text-sm hover:bg-red-600 transition-colors rounded">
             Join Now
           </a>
         </div>
@@ -53,12 +53,12 @@ export default function Navbar() {
                 key={link} 
                 href={`#${link.toLowerCase()}`} 
                 onClick={() => setIsOpen(false)}
-                className="py-3 text-lg font-medium text-gray-300 hover:text-accent-green border-b border-white/5"
+                className="py-3 text-lg font-medium text-gray-300 hover:text-accent-red border-b border-white/5"
               >
                 {link}
               </a>
             ))}
-            <a href="#contact" className="mt-6 px-4 py-3 bg-accent-green text-primary-black font-semibold text-center uppercase tracking-wider text-sm rounded">
+            <a href="#contact" className="mt-6 px-4 py-3 bg-accent-red text-primary-black font-semibold text-center uppercase tracking-wider text-sm rounded">
               Join Now
             </a>
           </motion.div>

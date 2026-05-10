@@ -3,12 +3,12 @@ import { Phone, MapPin, Clock, MessageCircle } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 bg-[#050505] border-t border-white/5">
+    <section id="contact" className="py-24 bg-[#0F0000] border-t border-accent-red/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
           <div>
-            <h4 className="text-accent-green font-bold tracking-widest uppercase text-sm mb-4">Location & Times</h4>
+            <h4 className="text-accent-red font-bold tracking-widest uppercase text-sm mb-4">Location & Times</h4>
             <h2 className="text-5xl md:text-7xl font-heading text-white leading-[0.9] mb-10">
               DROP BY AND <br/>
               <span className="text-transparent text-gradient">SAY HELLO.</span>
@@ -17,7 +17,7 @@ export default function Contact() {
             <div className="space-y-8">
               <div className="flex items-start">
                 <div className="w-12 h-12 bg-white/5 flex items-center justify-center mr-6 shrink-0 rounded">
-                  <MapPin className="text-accent-green" size={24} />
+                  <MapPin className="text-accent-red" size={24} />
                 </div>
                 <div>
                   <h4 className="text-white font-bold uppercase tracking-wide text-sm mb-1">Address</h4>
@@ -27,7 +27,7 @@ export default function Contact() {
               
               <div className="flex items-start">
                 <div className="w-12 h-12 bg-white/5 flex items-center justify-center mr-6 shrink-0 rounded">
-                  <Clock className="text-accent-green" size={24} />
+                  <Clock className="text-accent-red" size={24} />
                 </div>
                 <div>
                   <h4 className="text-white font-bold uppercase tracking-wide text-sm mb-1">Opening Hours</h4>
@@ -37,7 +37,7 @@ export default function Contact() {
               
               <div className="flex items-start">
                 <div className="w-12 h-12 bg-white/5 flex items-center justify-center mr-6 shrink-0 rounded">
-                  <Phone className="text-accent-green" size={24} />
+                  <Phone className="text-accent-red" size={24} />
                 </div>
                 <div>
                   <h4 className="text-white font-bold uppercase tracking-wide text-sm mb-1">Call Us</h4>

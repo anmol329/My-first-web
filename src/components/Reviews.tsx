@@ -21,7 +21,7 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section className="py-24 bg-[#050505] relative overflow-hidden">
+    <section className="py-24 bg-[#0F0000] relative overflow-hidden">
       {/* Decorative text */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] font-heading font-bold text-white/5 whitespace-nowrap pointer-events-none select-none z-0">
         MEMBERS SAY
@@ -41,7 +41,7 @@ export default function Reviews() {
               <Quote className="absolute top-6 right-6 text-white/10" size={48} />
               <div className="flex mb-6">
                 {[...Array(rev.rating)].map((_, i) => (
-                  <Star key={i} size={18} className="text-accent-green fill-accent-green mr-1" />
+                  <Star key={i} size={18} className="text-accent-red fill-accent-red mr-1" />
                 ))}
               </div>
               <p className="text-gray-300 mb-8 italic text-sm leading-relaxed relative z-10">"{rev.review}"</p>
